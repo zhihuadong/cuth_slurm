@@ -81,7 +81,7 @@ cuth20
 cuth20
 ```
 
-Or test run a simple MPI program with srun:
+Test compile and run a simple MPI program with srun:
 ``` C
 [dong@qcdserver17 test]$ cat hello.cpp
 #include <stdio.h>
@@ -111,6 +111,10 @@ int main(int argc, char * argv[])
 ``` shell
 [dong@qcdserver17 test]$ module load openmpi
 [dong@qcdserver17 test]$ mpic++ -o hello hello.cpp
+```
+Here we used openmpi, you can use mvapich2 if you want.
+Now we run it 
+```
 [dong@qcdserver17 test]$ srun -N2 -n4 hello
 Hello World from Task 0 on cuth20 
 Hello World from Task 2 on cuth21 
