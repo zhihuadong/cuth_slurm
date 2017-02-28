@@ -21,7 +21,7 @@ Some commonly used basic commands:
 
 Example:
 
-`[root@qcdserver17 ~]# sinfo
+```[root@qcdserver17 ~]# sinfo
 
 PARTITION  AVAIL  TIMELIMIT  NODES  STATE NODELIST
 
@@ -34,5 +34,5 @@ cuth*         up   infinite     11   idle cuth[20-30]
 cuth_short    up   12:00:00      9  alloc cuth[03-11]
 
 [root@qcdserver17 ~]# 
-`
+```
 
