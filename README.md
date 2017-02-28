@@ -82,7 +82,7 @@ cuth20
 ```
 
 Or test run a simple MPI program with srun:
-```
+``` C
 [dong@qcdserver17 test]$ cat hello.cpp
 #include <stdio.h>
 #include <stdlib.h>
@@ -106,7 +106,9 @@ int main(int argc, char * argv[])
         MPI_Finalize();
         return 0;
 }
+```
 
+``` shell
 [dong@qcdserver17 test]$ module load openmpi
 [dong@qcdserver17 test]$ mpic++ -o hello hello.cpp
 [dong@qcdserver17 test]$ srun -N2 -n4 hello
